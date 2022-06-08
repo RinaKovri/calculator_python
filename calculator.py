@@ -49,19 +49,14 @@ while nextOperation:
         continue
 
     if operation == 1:
-        print(user_first_num, "+", user_second_num, "=", (first_num + second_num))
+        print(first_num, "+", second_num, "=", (first_num + second_num))
     elif operation == 2:
-        print(user_first_num, "-", user_second_num, "=", (first_num - second_num))
+        print(first_num, "-", second_num, "=", (first_num - second_num))
     elif operation == 3:
-        print(user_first_num, "*", user_second_num, "=", (first_num * second_num))
+        print(first_num, "*", second_num, "=", (first_num * second_num))
     elif operation == 4:
-        print(user_first_num, "/", user_second_num, "=", (first_num / second_num))
+        print(first_num, "/", second_num, "=", (first_num / second_num))
     else:
         print("Wrong input, try again", operation)
 
-    nextOperation = input("Let's do next operation (yes/no)") == "yes"
-
-
-
-
-
+    nextOperation = input("Let's do next calculation? (yes/no): ") == "yes"
